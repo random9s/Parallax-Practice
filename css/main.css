@@ -15,6 +15,11 @@ body {
     line-height: 1.4;
 }
 
+.enterbtn{
+    margin-left: 27em !important;
+    margin-top: 3.5em !important;
+}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -163,14 +168,14 @@ main {
 	}
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/greatwall.jpg')}
+#slide-1 .bcg {background-image:url('../img/jake.jpg')}
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/bcg_slide-2.jpg')}
+#slide-2 .bcg {background-image:url('../img/mizzou.jpg')}
 #slide-2 .hsContent {
 	margin-left: -450px;
 	top: auto;
@@ -188,18 +193,30 @@ main {
 	#slide-3 h2 {
 		color: #f2ead6;
 		background-color: rgba(0,0,0,0.6);
+        margin-bottom: 50em;
 	}
 
 /* Slide 4 */
-#slide-4 .bcg {background-image:url('../img/mizzou.jpg')}
+#slide-4 .bcg {background-image:url('../img/montana.jpg')}
 #slide-4 .hsContent {
+	margin-left: -450px;
+	top: auto;
+}
+#slide-4 h2 {
+    position: fixed;
+    top: 70%;
+}
+
+/* Slide 5 */
+#slide-5 .bcg {background-image:url('../img/oregon.jpg')}
+#slide-5 .hsContent {
 	margin-left: -450px;
     position: fixed;
     top: 250px;
 }
-	#slide-4 h2 {
+	#slide-5 h2 {
 		background: none;
-		padding-left: 0;
+		padding-left: 285px;
 		padding-right: 0;
 	}
 
