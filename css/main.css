@@ -11,13 +11,299 @@ textarea {
 }
 
 body {
-    font-size: 1em;
+    font-size: .5em;
     line-height: 1.4;
 }
 
-.enterbtn{
-    margin-left: 27em !important;
-    margin-top: 3.5em !important;
+.name{
+    font-size: 24px;
+    font-family: "Ubuntu", sans-serif;
+    font: "Ubuntu";
+    margin-top: 5px;
+}
+
+.twitter{
+    margin: 5px;
+    margin-right: 10px;
+    height: 34.6px;
+    width: 35px;
+}
+
+.twitter:hover{
+    -webkit-filter: blur(2px);
+}
+
+.facebook{
+    margin: 1px;
+    margin-right: 6px;
+    height: 42.6px;
+    width: 43px;
+}
+
+.facebook:hover{
+    -webkit-filter: blur(2px);
+}
+
+.linkedin{
+    margin: 3px;
+    margin-right: 6px;
+    height: 39.6px;
+    width: 40px;
+}
+
+.linkedin:hover{
+    -webkit-filter: blur(2px);
+}
+
+.github{
+    margin: 2px;
+    margin-right: 6px;
+    height: 43.6px;
+    width: 44px;
+}
+
+.github:hover{
+    -webkit-filter: blur(2px);
+}
+
+.blog{
+    margin: 3px;
+    margin-top: 6px;
+    height: 36.6px;
+    width: 37px;
+}
+
+.blog:hover{
+    -webkit-filter: blur(2px);
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+/* Normalize buttons in IE */
+button {
+  width: auto;
+  overflow: visible;
+}
+/* Hand cursor on clickable controls */
+input[type="reset"],
+input[type="submit"],
+input[type="file"],
+input[type="radio"],
+input[type="checkbox"],
+select,
+button {
+  cursor: pointer;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.btn,
+input[type="submit"].btn {
+  height: 40px;
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.65em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+  outline: none;
+  margin: 0;
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 0.55em 2.5em;
+  color: #222222;
+  background: #e0e3e5;
+}
+.btn:hover,
+input[type="submit"].btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+  background: #b3b6b7;
+}
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.btn-white,
+input[type="submit"].btn-white {
+  color: rgba(0, 0, 0, 0.9);
+  background: #ffffff;
+}
+.btn-white:hover,
+input[type="submit"].btn-white:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background: #ededed;
+}
+.btn-white.btn-active,
+input[type="submit"].btn-white.btn-active {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.btn-white.btn-active,
+input[type="submit"].btn-white.btn-active,
+.btn-white.btn-disabled,
+input[type="submit"].btn-white.btn-disabled,
+.btn-white.btn[disabled],
+input[type="submit"].btn-white.btn[disabled] {
+  color: rgba(0, 0, 0, 0.5);
+  background: #ededed;
+}
+.btn-white.btn-active:hover,
+input[type="submit"].btn-white.btn-active:hover,
+.btn-white.btn-disabled:hover,
+input[type="submit"].btn-white.btn-disabled:hover,
+.btn-white.btn[disabled]:hover,
+input[type="submit"].btn-white.btn[disabled]:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.btn-white.btn-outline,
+input[type="submit"].btn-white.btn-outline {
+  background: none;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn-white.btn-outline:hover,
+input[type="submit"].btn-white.btn-outline:hover {
+  color: rgba(0, 0, 0, 0.9);
+  background: #ffffff;
+}
+.btn-white.btn-outline.btn[disabled],
+input[type="submit"].btn-white.btn-outline.btn[disabled],
+.btn-white.btn-outline.btn-disabled,
+input[type="submit"].btn-white.btn-outline.btn-disabled {
+  background: none;
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-white.btn-outline.btn-active,
+input[type="submit"].btn-white.btn-outline.btn-active {
+  background: none;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  box-shadow: 0 1px 3px rgba(237, 237, 237, 0.6) inset;
+}
+.btn-white:hover,
+input[type="submit"].btn-white:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background: #ededed;
+}
+.btn-white.btn-active,
+input[type="submit"].btn-white.btn-active {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.btn-white.btn-active,
+input[type="submit"].btn-white.btn-active,
+.btn-white.btn-disabled,
+input[type="submit"].btn-white.btn-disabled,
+.btn-white.btn[disabled],
+input[type="submit"].btn-white.btn[disabled] {
+  color: rgba(0, 0, 0, 0.5);
+  background: #ededed;
+}
+.btn-white.btn-active:hover,
+input[type="submit"].btn-white.btn-active:hover,
+.btn-white.btn-disabled:hover,
+input[type="submit"].btn-white.btn-disabled:hover,
+.btn-white.btn[disabled]:hover,
+input[type="submit"].btn-white.btn[disabled]:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.btn-white.btn-outline,
+input[type="submit"].btn-white.btn-outline {
+  background: none;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn-white.btn-outline:hover,
+input[type="submit"].btn-white.btn-outline:hover {
+  color: rgba(0, 0, 0, 0.9);
+  background: #ffffff;
+}
+.btn-white.btn-outline.btn[disabled],
+input[type="submit"].btn-white.btn-outline.btn[disabled],
+.btn-white.btn-outline.btn-disabled,
+input[type="submit"].btn-white.btn-outline.btn-disabled {
+  background: none;
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn-white.btn-outline.btn-active,
+input[type="submit"].btn-white.btn-outline.btn-active {
+  background: none;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  box-shadow: 0 1px 3px rgba(237, 237, 237, 0.6) inset;
+}
+.btn-white.btn-outline.btn-active {
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.48750000000000004em 2.5em;
+}
+.btn-outline,
+input[type="submit"].btn-outline {
+  background: none;
+  padding: 0.48750000000000004em 2.5em;
+  border: 1px solid #0f0f0f;
+}
+.btn-outline:hover,
+input[type="submit"].btn-outline:hover {
+  border-color: #b3b6b7;
+}
+.btn-outline.btn-active {
+  padding: 0.55em 2.5em;
+}
+.btn-outline.bold {
+  border-width: 2px;
+  padding: 0.42500000000000004em 2.5em;
+}
+.btn-outline.btn[disabled],
+.btn-outline.btn-disabled {
+  background: none;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-outline.btn-active {
+  background: none;
+  color: rgba(0, 0, 0, 0.4);
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.contactbtn{
+    margin-top: 2em !important;
+    margin-left: 23.121em !important;
+    font-size: 12px;
+    font: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.resumebtn{
+    margin-top: 2em !important;
+    font-size: 13px;
+    font: 'Ubuntu';
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*
@@ -102,6 +388,7 @@ body {
 }
 h2 {
 	margin-top: 0;
+    margin-right: .5em;
 }
 .loading {
 	background: url('../img/ico_loading.gif') no-repeat center center;
@@ -173,6 +460,10 @@ main {
 	bottom: 200px;
 	top: auto;
 }
+#slide-1 h2 {
+    position: relative;
+    top: 70%;
+}
 
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../img/mizzou.jpg')}
@@ -182,7 +473,7 @@ main {
 }
 #slide-2 h2 {
     position: fixed;
-    top: 70%;
+    top: 30%;
 }
 
 /* Slide 3 */
@@ -216,7 +507,7 @@ main {
 }
 	#slide-5 h2 {
 		background: none;
-		padding-left: 285px;
+		padding-left: 330px;
 		padding-right: 0;
 	}
 
@@ -408,4 +699,22 @@ main {
     h3 {
         page-break-after: avoid;
     }
+}
+
+/*
+*   Resume page
+*/
+
+.jresume{
+    width: 580px;
+    height: 650px;
+    margin: 5px;
+    position: relative;
+    margin-left: 23.25em;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.resume-wrapper{
+    position: fixed;
 }

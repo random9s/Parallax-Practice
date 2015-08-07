@@ -1,0 +1,130 @@
+.message-left{
+    padding-top: 75px;
+    padding-left: 100px;
+}
+
+.info-block{
+    padding-top: 25px;
+}
+
+.message-right{
+    padding-top: 75px;
+    padding-left: 100px; 
+}
+
+.message-block{
+    padding-top: 25px;
+}
+
+.touch{
+    color: black;
+}
+
+.send{
+    color: black;
+}
+
+.info{
+    color: #fffff6;
+    padding-right: 120px;
+}
+
+.contact{
+    padding-top: 25px;
+}
+
+.number{
+    padding: 0.3em 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.number img{
+    float: left;
+}
+
+.number h3{
+    float: left;
+    padding-left: 50px;
+    margin: 0px;
+}
+
+.mail{
+    padding: 0.3em 0;
+    padding-top: 30px;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.mail img{
+    float: left;
+}
+
+.mail h3{
+    float: left;
+    padding-left: 50px;
+    margin: 0px;
+}
+
+.name{
+    width: 314px;
+    border: 2px solid;
+    border-color: #d4d4d4 #ededed #f7f7f7;
+}
+
+.name-block{
+    padding-bottom: 5px;
+}
+
+.email{
+    width: 314px;
+    border: 2px solid;
+    border-color: #d4d4d4 #ededed #f7f7f7;
+}
+
+.email-block{
+    padding-bottom: 5px;
+}
+
+.phone{
+    width: 314px;
+    border: 2px solid;
+    border-color: #d4d4d4 #ededed #f7f7f7;
+}
+
+.phone-block{
+    padding-bottom: 5px;
+}
+
+.comment-box{
+    border: 2px solid;
+    border-color: #d4d4d4 #ededed #f7f7f7;
+}
+
+.submit{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 35px;
+    width: 120px;
+    color: #fffff6;
+    background-color: #222;
+    border: 1px solid;
+    border-color: #d4d4d4 #ededed #f7f7f7;
+    border-radius: 16px;
+}
+
+.submit:hover{
+    background-color: #d2dbdb;
+    border-color: #000 #444 #999;
+    color: #000;
+}
+
+.submit-block{
+    padding-top: 10px;
+}
+
+body{
+    font:13px/20px "Ubuntu" sans-serif;
+    background-color: #E4E4E2;
+}
