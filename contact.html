@@ -27,7 +27,7 @@
             
     <body> 
         
-    <div style=" background:rgba(255,255,255,0.6) !important;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div style=" background: #E9A119 !important;" class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
       <div class="container">
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -43,45 +43,50 @@
     
     <div class="container-fluid" class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="message-left">
-                    <h2 class="touch">GET IN TOUCH</h2>
-                    <div class="info-block">
-                        <p class="info">
-                            If you would like to get in touch with me or leave some information, feel free to do so here.  
-                            I would really love to hear from all potential employers, so I encourage you to call or email me.
-                        </p>
-                    </div>
-                    <div class="contact">
-                        <div class="number">
-                            <img src="http://babbage.cs.missouri.edu/~jpvc4/resume_site/phone.jpeg" height="50px"><h2>
-                            <h3>(314) 686-9723</h3>
+            <div class="col-md-12">
+                <div class="message">
+                    <h2 class="send">CONTACT ME</h2>
+                    <h3 class="info">Feel free to get in touch anytime.</h3>
+                </div>
+                <div class="form">
+                    <form id="emailme" action="contact.html">
+                        <div class="row">
+                            <input class="col-md-6 form-block name" id="firstNameval" type="text" name="firstName" value="" placeholder="First Name" required>
+                            <input class="col-md-6 form-block name" id="lastNameval" type="text" name="lastName" value="" placeholder="Last Name" required>
                         </div>
-                        <div class="mail">
-                            <img src="http://babbage.cs.missouri.edu/~jpvc4/resume_site/email.jpeg" height="50px">
-                            <h3>jake.august.parham@gmail.com</h3>
+                        <div class="row">
+                            <input class="col-md-6 form-block name" id="emailval" type="text" name="email" value="" placeholder="Email" required>
+                            <input class="col-md-6 form-block name" id="phoneval" type="text" name="phone-number" value="" placeholder="Phone number" required>
                         </div>
-                    </div>
-                </div>    
-            </div>
-            <div class="col-md-6">
-                <div class="message-right">
-                    <h2 class="send">SEND ME A MESSAGE</h2>
-                    <div class="message-block">
-                        <p class="name-block"><input class="name" type="text" name="Name" value="" placeholder="Name" required></p>
-                        <p class="email-block"><input class="email" type="text" name="email" value="" placeholder="E-mail" required></p>
-                        <p class="phone-block"><input class="phone" type="text" name="phone-number" value="" placeholder="Phone number" required></p>
-                        <textarea class="comment-box" name="comments" style="margin: 0px; width: 314px; height: 117px;" placeholder="Comments..."></textarea>
-                        <p class="submit-block"><input class="submit" type="submit" name="comment" value="Submit"></p>
-                    </div>
+                        <div class="row">
+                            <textarea class="col-md-8 form-block comment-box" id="commentval" type="text" name="comments" value="" placeholder="Comments..."></textarea>
+                        </div>
+                        <button class="submit btn btn-white btn-outline" type="submit" name="submit" onclick="sendEmail()" value="Submit">Submit</button>
+                    </form>
                 </div>
             </div>
-            </div>
         </div>
+    </div>
+        
+        <script>
+            function sendEmail() {
+                var name = document.getElementById("nameval").value;
+                var email = document.getElementById("emailval").value;
+                var phone = document.getElementById("phoneval").value;
+                var comments = document.getElementById("commentval").value;
+                  
+                var link = "mailto:jake.august.parham@gmail.com"
+                + "&subject=" + escape('Hello I am' + name)
+                + "&body=" + escape(comments);
+
+                window.location.href = link;            
+            }
+        </script>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="konami-js/konami.js"></script>
         <script src="js/imagesloaded.js"></script>
         <script src="js/skrollr.js"></script>
         <script src="js/_main.js"></script>

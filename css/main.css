@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: .5em;
     line-height: 1.4;
+    overflow-x: hidden;
 }
 
 .name{
@@ -22,59 +23,105 @@ body {
     margin-top: 5px;
 }
 
-.twitter{
-    margin: 5px;
-    margin-right: 10px;
-    height: 34.6px;
-    width: 35px;
+.name:hover{
+    
 }
 
-.twitter:hover{
-    -webkit-filter: blur(2px);
+.twitter{
+  width: 40px;
+  height: 40px;
+  background-image: url(../home_img/twitter.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  margin: 10px;
+  margin-right: 8px;
+}
+
+ul:hover .twitter{
+    -webkit-filter: blur(4px);
+}
+
+ul .twitter:hover{
+    -webkit-filter: blur(0px);
+    background-image: url(../home_img/twitter_blue.png);
 }
 
 .facebook{
-    margin: 1px;
-    margin-right: 6px;
-    height: 42.6px;
-    width: 43px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../home_img/facebook.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  margin: 5px;
+  margin-right: 5px;
 }
 
-.facebook:hover{
-    -webkit-filter: blur(2px);
+ul:hover .facebook{
+    -webkit-filter: blur(4px);
+}
+
+ul .facebook:hover{
+    -webkit-filter: blur(0px);
+    background-image: url(../home_img/facebook_blue.png);
 }
 
 .linkedin{
-    margin: 3px;
-    margin-right: 6px;
-    height: 39.6px;
-    width: 40px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../home_img/linkedin.png);
+  background-repeat: no-repeat;
+  background-size: 48px;
+  margin: 5px;
+  margin-top: 6px;
+  margin-right: 5px;
 }
 
-.linkedin:hover{
-    -webkit-filter: blur(2px);
+ul:hover .linkedin{
+    -webkit-filter: blur(4px);
+}
+
+ul .linkedin:hover{
+    -webkit-filter: blur(0px);
+    background-image: url(../home_img/linkedin_blue.png);
 }
 
 .github{
-    margin: 2px;
-    margin-right: 6px;
-    height: 43.6px;
-    width: 44px;
+  width: 55px;
+  height: 55px;
+  background-image: url(../home_img/githubimg.png);
+  background-repeat: no-repeat;
+  background-size: 53px;
+  margin: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
-.github:hover{
-    -webkit-filter: blur(2px);
+ul:hover .github{
+    -webkit-filter: blur(4px);
+}
+
+ul .github:hover{
+    -webkit-filter: blur(0px);
+    background-image: url(../home_img/githubimg_blue.png);
 }
 
 .blog{
-    margin: 3px;
-    margin-top: 6px;
-    height: 36.6px;
-    width: 37px;
+  width: 45px;
+  height: 45px;
+  background-image: url(../home_img/wordpress.png);
+  background-repeat: no-repeat;
+  background-size: 45px;
+  margin: 5px;
+  margin-top: 10px;
 }
 
-.blog:hover{
-    -webkit-filter: blur(2px);
+ul:hover .blog{
+    -webkit-filter: blur(4px);
+}
+
+ul .blog:hover{
+    -webkit-filter: blur(0px);
+    background-image: url(../home_img/wordpress_blue.png);
 }
 
 button,
@@ -404,6 +451,11 @@ section {
 	-moz-transition: opacity 300ms ease-out;
 	transition: opacity 300ms ease-out;
 }
+
+img:hover{
+    background-color: white;
+}
+
 main {
 	overflow-x: hidden;
 }
@@ -434,7 +486,7 @@ main {
 .hsContent {
 	max-width: 700px;
 	position: absolute;
-	left: 50%;
+	left: 52%;
 	top: 50%;
 }
 	.hsContent h2  {
@@ -501,7 +553,7 @@ main {
 /* Slide 5 */
 #slide-5 .bcg {background-image:url('../img/oregon.jpg')}
 #slide-5 .hsContent {
-	margin-left: -450px;
+    margin-left: -450px;
     position: fixed;
     top: 250px;
 }

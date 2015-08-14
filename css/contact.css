@@ -1,130 +1,88 @@
-.message-left{
-    padding-top: 75px;
-    padding-left: 100px;
+
+body{
+    font:13px/20px "Ubuntu" sans-serif;
+    background-color: #272725 !important;
 }
 
-.info-block{
-    padding-top: 25px;
+placeholder{
+    color: #5E5E5E !important;
 }
 
-.message-right{
-    padding-top: 75px;
-    padding-left: 100px; 
+textarea{
+    resize: none !important;
 }
 
-.message-block{
-    padding-top: 25px;
-}
-
-.touch{
-    color: black;
+.message{
+    padding-top: 30px;
+    position: relative;    
 }
 
 .send{
-    color: black;
+    font-size: 18px;
+    color: #13D7A9;
+    margin-left: 30em;
 }
 
 .info{
-    color: #fffff6;
-    padding-right: 120px;
-}
-
-.contact{
-    padding-top: 25px;
-}
-
-.number{
-    padding: 0.3em 0;
-    overflow: hidden;
-    zoom: 1;
-}
-
-.number img{
-    float: left;
-}
-
-.number h3{
-    float: left;
-    padding-left: 50px;
-    margin: 0px;
-}
-
-.mail{
-    padding: 0.3em 0;
-    padding-top: 30px;
-    overflow: hidden;
-    zoom: 1;
-}
-
-.mail img{
-    float: left;
-}
-
-.mail h3{
-    float: left;
-    padding-left: 50px;
-    margin: 0px;
+    font-size: 24px;
+    letter-spacing: .5px;
+    color: #FFFFFF;
+    margin-left: 18em;
 }
 
 .name{
-    width: 314px;
-    border: 2px solid;
+    width: 400px !important;
+    margin: .2em !important;
     border-color: #d4d4d4 #ededed #f7f7f7;
-}
-
-.name-block{
-    padding-bottom: 5px;
-}
-
-.email{
-    width: 314px;
-    border: 2px solid;
-    border-color: #d4d4d4 #ededed #f7f7f7;
-}
-
-.email-block{
-    padding-bottom: 5px;
-}
-
-.phone{
-    width: 314px;
-    border: 2px solid;
-    border-color: #d4d4d4 #ededed #f7f7f7;
-}
-
-.phone-block{
-    padding-bottom: 5px;
 }
 
 .comment-box{
     border: 2px solid;
-    border-color: #d4d4d4 #ededed #f7f7f7;
+    border-color: #d4d4d4 #ededed #f7f7f7;    
+    width: 810px !important; 
+    height: 117px;
+    font-size: 18px;
+    margin: .2em !important;
 }
 
 .submit{
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 35px;
-    width: 120px;
-    color: #fffff6;
-    background-color: #222;
-    border: 1px solid;
-    border-color: #d4d4d4 #ededed #f7f7f7;
-    border-radius: 16px;
+    border: 2px solid !important;
+    width: 150px !important;
+    margin: .2em !important;
+    margin-top: 2em !important;
+    margin-left: 23em !important;
 }
 
-.submit:hover{
-    background-color: #d2dbdb;
-    border-color: #000 #444 #999;
-    color: #000;
+.form{
+    margin: 2em;
+    margin-top: 5em;   
+    margin-left: 15em;
 }
 
-.submit-block{
-    padding-top: 10px;
+.form-block{
+    background-color: #343432 !important;
+    border-color: #343432 !important;
+    color: #FDFDFD;
 }
 
-body{
-    font:13px/20px "Ubuntu" sans-serif;
-    background-color: #E4E4E2;
+.form-row{
+    margin-left: 15em !important;
+}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
 }
