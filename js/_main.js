@@ -42,4 +42,16 @@
 		
 } )( jQuery );
 
+function sendEmail() {
+    var name = document.getElementById("nameval").value;
+    var email = document.getElementById("emailval").value;
+    var phone = document.getElementById("phoneval").value;
+    var comments = document.getElementById("commentval").value;
+              
+    var link = 'mailto:jake.august.parham@gmail.com'
+    + '&subject=' + escape("Hey")
+    + '=&body=' + escape(comments);
+    window.open(link);
+}
+
 var easter_egg = new Konami(function() {window.location.href="http://www.letsplaysnes.com/play-contra-online-nes/?play=true"});

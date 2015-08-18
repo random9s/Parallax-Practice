@@ -758,15 +758,25 @@ main {
 */
 
 .jresume{
-    width: 580px;
-    height: 650px;
-    margin: 5px;
-    position: relative;
-    margin-left: 23.25em;
-    border: 1px solid black;
+    margin: 5em;
+    margin-left: 28em;
+    position: center center;
+    border: 2px solid black;
     border-radius: 3px;
+    height: 100em;
 }
 
 .resume-wrapper{
-    position: fixed;
+    position: none;
+    background-color: #E4E4E2;
+}
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer, .twitter, .facebook, .linkedin, .github, .blog {
+       cursor: pointer;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
